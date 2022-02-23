@@ -25,6 +25,7 @@ body{
     align-self: center;
     color: #fff;
     border-radius: 1em;
+    box-shadow: 2px 2px 16px 8px hsl(217, 60%, 6%);
 }
 
 .img-card{
