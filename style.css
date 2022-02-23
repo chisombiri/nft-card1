@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.card{
+    padding: 0.5em 1em;
+    width: 18em;
+    height: 31em;
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-self: center;
+    color: #fff;
+    border-radius: 1em;
+}
+
+.img-card{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-image: url(images/image-equilibrium.png);
+    background-size: cover;
+    width: 16em;
+    height: 16em;
+    border-radius: 1em;
+}
+
+.img-card svg{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    opacity: 0;
+}
+
+.img-hover{
+    border-radius: 1em;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%);
+}
+
+.description{
+    font-size: 0.8em;
+    color: #616c91;
+}
+
+hr{
+    border-color: hsl(215, 32%, 27%);
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eth{
+    color: hsl(178, 100%, 50%);
+}
+.creator{
+    display: flex;
+    align-items: center;
+}
+
+.creator p{
+    font-size: 0.9em;
+}
+
+.creator span{
+    color: #616c91;
+}
+
+.days-left{
+    color: #616c91;
+}
+
+.profile{
+    height: 2em;
+    width: 2em;
+    border: 0.1em solid gray;
+    border-radius: 50%;
+    background-color: gray;
+    background-image: url(images/me.png);
+    background-size: contain;
+    background-position-y: center;
+    background-position-x: center;
+    margin-right: 0.5em;
+}
+
+.equi:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.img-card:hover{
+    cursor: pointer;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0.5;
+}
+
+.img-card:hover svg{
+    opacity: 1;
+}
+
+.img-card:hover .img-hover{
+    opacity: 0.6;
+}
